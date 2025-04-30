@@ -71,7 +71,8 @@ body {
     font-weight: light;
     border: none;
     border-radius: 0;
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    background-color: #fde7ed;
+    box-shadow: inset -1px -1px #b81949, inset 1px 1px #fff, inset -2px -2px #cf899e, inset 2px 2px #fdc8d6;
     box-sizing: border-box;
     color: transparent;
     text-shadow: 0 0 #000;
@@ -81,9 +82,10 @@ body {
     text-shadow: 1px 1px #222;
 }
 #operator button:focus, #clear button:focus, #number button:active {
-    outline: 1px dotted #000;
+    outline: 1px dotted #b81949;
     outline-offset: -4px;
 }
+
 #number {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -95,13 +97,14 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 0;
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    background-color: #fde7ed;
+    box-shadow: inset -1px -1px #b81949, inset 1px 1px #fff, inset -2px -2px #cf899e, inset 2px 2px #fdc8d6;
     box-sizing: border-box;
     color: transparent;
     text-shadow: 0 0 #000;
 }
-#number button:hover {
-    background-color: #ddd;
+#number button:hover, #operator button:hover, #clear button:hover  {
+    background-color: #fdc8d6;
     font-weight: bold;
 }
 #equal {
