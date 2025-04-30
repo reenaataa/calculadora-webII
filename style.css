@@ -12,7 +12,7 @@ body {
 }
 #wrapper {
     width: 600px;
-    margin: 190px auto;
+    margin: 280px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +25,7 @@ body {
     margin-bottom: 1.5em;
     text-align: center;
     font-family: "Pixelify Sans", sans-serif;
+    color: #fa7292;
 }
 #title h1 {
     font-weight: bolder;
@@ -41,7 +42,7 @@ body {
     margin-left: 6px;
     appearance: none;
     background-color: #fff;
-    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #efefef, inset 2px 2px #0a0a0a;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #efefef, inset 2px 2px #912445;
     box-sizing: border-box;
     padding: 3px 4px;
     border: none;
@@ -56,8 +57,11 @@ body {
     grid-gap: 0.5em;
     padding: 10px 6px;
     height: 260px;
-    border: 1px ridge #000;
-    border-radius: 6px;
+    border: none;
+    appearance: none;
+    border-radius: 8px;
+    box-shadow: inset -1.5px -1.5px #912445, inset 1px 1px #fff, inset -2px -2px #e7cad3, inset 2px 2px #f1f1f1;
+    background-color: #fcf5f7;
 }
 #clear, #operator {
     display: flex;
@@ -72,20 +76,19 @@ body {
     border: none;
     border-radius: 0;
     background-color: #fde7ed;
-    box-shadow: inset -1px -1px #b81949, inset 1px 1px #fff, inset -2px -2px #cf899e, inset 2px 2px #fdc8d6;
+    box-shadow: inset -1px -1px #912445, inset 1px 1px #fff, inset -2px -2px #cf899e, inset 2px 2px #fdc8d6;
     box-sizing: border-box;
     color: transparent;
     text-shadow: 0 0 #000;
 }
 #operator button:active, #clear button:active, #number button:active {
-    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #912445, inset -2px -2px #dfdfdf, inset 2px 2px grey;
     text-shadow: 1px 1px #222;
 }
 #operator button:focus, #clear button:focus, #number button:active {
     outline: 1px dotted #b81949;
     outline-offset: -4px;
 }
-
 #number {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -98,7 +101,7 @@ body {
     border: none;
     border-radius: 0;
     background-color: #fde7ed;
-    box-shadow: inset -1px -1px #b81949, inset 1px 1px #fff, inset -2px -2px #cf899e, inset 2px 2px #fdc8d6;
+    box-shadow: inset -1px -1px #912445, inset 1px 1px #fff, inset -2px -2px #cf899e, inset 2px 2px #fdc8d6;
     box-sizing: border-box;
     color: transparent;
     text-shadow: 0 0 #000;
@@ -107,11 +110,9 @@ body {
     background-color: #fdc8d6;
     font-weight: bold;
 }
-#equal {
-    background-color: #ccc;
+#result {
+    background: #fcc4d1!important;
 }
-
-
 #links {
     display: flex;
     align-items: center;
@@ -121,7 +122,7 @@ body {
 #links a{
     font-family: "Pixelify Sans", sans-serif;
     text-decoration: none;
-    color: #000;
+    color: #fa7292;
 }
 #links a:hover {
     text-decoration: underline;
@@ -129,4 +130,5 @@ body {
 #links img {
     width: 20px;
     height: 20px;
+    filter: invert(49%) sepia(97%) saturate(303%) hue-rotate(297deg) brightness(97%) contrast(102%);
 }
