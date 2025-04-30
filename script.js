@@ -16,7 +16,7 @@ function calcular(){
     try {
         screen.value = eval(screen.value)
     } catch {
-        screen.value = 'Erro'
+        screen.value = 'Error'
     }
 }
 
@@ -25,7 +25,7 @@ function raiz() {
     try {
         screen.value = Math.sqrt(eval(screen.value));
     } catch {
-        screen.value = 'Erro';
+        screen.value = 'Error';
     }
 }
 
@@ -34,6 +34,6 @@ function porcentagem() {
     try {
         screen.value = eval(screen.value) / 100;
     } catch {
-        screen.value = 'Erro';
+        screen.value = 'Error';
     }
 }
