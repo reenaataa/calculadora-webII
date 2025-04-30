@@ -85,9 +85,10 @@ body {
     box-shadow: inset -1px -1px #fff, inset 1px 1px #912445, inset -2px -2px #dfdfdf, inset 2px 2px grey;
     text-shadow: 1px 1px #222;
 }
-#operator button:focus, #clear button:focus, #number button:active {
+#operator button:focus, #clear button:focus, #number button:focus {
     outline: 1px dotted #b81949;
     outline-offset: -4px;
+    font-weight: bold;
 }
 #number {
     display: grid;
@@ -108,7 +109,6 @@ body {
 }
 #number button:hover, #operator button:hover, #clear button:hover  {
     background-color: #fdc8d6;
-    font-weight: bold;
 }
 #result {
     background: #fcc4d1!important;
