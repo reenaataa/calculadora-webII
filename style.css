@@ -38,6 +38,14 @@ body {
 #screen {
     height: 40px;
     padding: 2px;
+    margin-left: 6px;
+    appearance: none;
+    background-color: #fff;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #efefef, inset 2px 2px #0a0a0a;
+    box-sizing: border-box;
+    padding: 3px 4px;
+    border: none;
+    font-size: 12px;
 }
 #calculator {
     display: grid;
@@ -59,6 +67,22 @@ body {
 #operator button, #clear button {
     width: 25px;
     height: 25px;
+    cursor: pointer;
+    font-weight: light;
+    border: none;
+    border-radius: 0;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    box-sizing: border-box;
+    color: transparent;
+    text-shadow: 0 0 #000;
+}
+#operator button:active, #clear button:active, #number button:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+    text-shadow: 1px 1px #222;
+}
+#operator button:focus, #clear button:focus, #number button:active {
+    outline: 1px dotted #000;
+    outline-offset: -4px;
 }
 #number {
     display: grid;
@@ -68,6 +92,38 @@ body {
 #number button {
     width: 40px;
     height: 30px;
-    border-radius: 20px;
-    border: 1px solid #000;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    box-sizing: border-box;
+    color: transparent;
+    text-shadow: 0 0 #000;
+}
+#number button:hover {
+    background-color: #ddd;
+    font-weight: bold;
+}
+#equal {
+    background-color: #ccc;
+}
+
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+#links a{
+    font-family: "Pixelify Sans", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+#links a:hover {
+    text-decoration: underline;
+}
+#links img {
+    width: 20px;
+    height: 20px;
 }

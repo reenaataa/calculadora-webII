@@ -13,7 +13,7 @@
             <h2>Feita com Java Script</h2>
         </header>
         <div id="calculator">
-            <input type="TEXT" readonly disabled id="screen">
+            <input type="text" readonly disabled id="screen">
 
             <div id="clear">
                 <button onclick="clean()">C</button>
@@ -32,7 +32,7 @@
                 <button onclick="insertToScreen('3')">3</button>
                 <button onclick="insertToScreen('0')">0</button>
                 <button onclick="insertToScreen('.')">.</button>
-                <button onclick="calcular()">=</button>
+                <button onclick="calcular()" id="equal">=</button>
             </div>
 
             <div id="operator">
@@ -45,7 +45,12 @@
             </div>
         </div>
     </div>
-
+    <footer>
+        <div id="links">
+            <img src="https://files.catbox.moe/e38o8g.svg">
+            <a href="https://github.com/reenaataa" >Github</a>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
