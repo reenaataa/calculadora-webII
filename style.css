@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #edede4;
+    font-size: 13px;
+    color: #222;
+}
+#wrapper {
+    width: 600px;
+    margin: 190px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+}
+#title {
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+}
+#title h1 {
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 1;
+}
+#title h2 {
+    font-weight: lighter;
+    font-size: 14px;
+}
+#screen {
+    height: 40px;
+    padding: 2px;
+}
+#calculator {
+    display: grid;
+    grid-template-columns: auto 40px;
+    grid-template-rows: 70px auto;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 0.5em;
+    padding: 10px 6px;
+    height: 260px;
+    border: 1px ridge #000;
+    border-radius: 6px;
+}
+#clear, #operator {
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column; 
+}
+#operator button, #clear button {
+    width: 25px;
+    height: 25px;
+}
+#number {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+#number button {
+    width: 40px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
