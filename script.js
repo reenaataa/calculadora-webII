@@ -37,3 +37,14 @@ function porcentagem() {
         screen.value = 'Error';
     }
 }
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+
+    const btn = document.getElementById('darkmode-button');
+    if (document.body.classList.contains('dark-mode')) {
+        btn.textContent = '☀️';
+    } else {
+        btn.textContent = '🌙';
+    }
+}

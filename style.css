@@ -116,6 +116,10 @@ body {
 #result {
     background: #fcc4d1!important;
 }
+footer {
+    display: flex;
+    gap: 2.5em;
+}
 #links {
     display: flex;
     align-items: center;
@@ -135,7 +139,17 @@ body {
     height: 20px;
     filter: invert(49%) sepia(97%) saturate(303%) hue-rotate(297deg) brightness(97%) contrast(102%);
 }
-
+#darkmode-button {
+    height: 25px;
+    width: 25px;
+    font-size: 13px;
+    line-height: 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #912445;
+}
+/*Media Query*/
 @media screen and (max-width: 768px) and (min-width: 320px) {
     #calculator {
         grid-template-columns: auto auto;
@@ -184,5 +198,47 @@ body {
     #links a {
         font-size: 14px;
     }
+}
+/*Dark Mode*/
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+body.dark-mode #calculator {
+    background-color: #111;
+    box-shadow: inset -1.5px -1.5px #000, inset 1px 1px #6e6e6e, inset -2px -2px #444, inset 1px 1px #fff, 3px 3px 6px #00000052, -1px -1px 6px #00000052;
+}
+body.dark-mode #screen {
+    background-color: #444;
+    color: #fff;
+    box-shadow: inset -1px -1px #000, inset 1px 1px #888;
+}
+body.dark-mode #darkmode-button {
+    background-color: #fff;
+}
+body.dark-mode #clear button, body.dark-mode #number button, body.dark-mode #operator button {
+    background-color: #c0c0c0;
+    box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf
+}
+body.dark-mode #clear button:hover, body.dark-mode #number button:hover, body.dark-mode #operator button:hover {
+    background-color: #888;
+}
 
+body.dark-mode #result {
+    background: #888 !important;
+}
+
+body.dark-mode #operator button:focus, body.dark-mode #clear button:focus, body.dark-mode #number button:focus {
+    outline: 1px dotted #000;
+}
+body.dark-mode #links a {
+    color: #fff;
+}
+
+body.dark-mode #links img {
+    filter: invert(1);
+}
+
+body.dark-mode #title {
+    color: #fff
 }
